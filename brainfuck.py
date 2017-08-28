@@ -11,6 +11,10 @@
 
 import sys
 
+if len(sys.argv) != 2:
+	print("Usage :",sys.argv[0]," <file>")
+	return
+:
 SYMBOLS = ['>','<','+','-','.',',','[',']']
 MEMORY = [0 for i in range (1024)]
 PTR = 0
