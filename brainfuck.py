@@ -13,7 +13,7 @@ import sys
 
 if len(sys.argv) != 2:
 	print("Usage :",sys.argv[0]," <file>")
-	return
+	sys.exit(-1)
 
 SYMBOLS = ['>','<','+','-','.',',','[',']']
 MEMORY = [0 for i in range (1024)]
